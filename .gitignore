@@ -1,0 +1,66 @@
+# Local environments and Python caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# Local paths, secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+configs/local.toml
+*.local.toml
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Raw datasets and generated outputs; public results/ is intentionally tracked
+/datasets/
+/data/raw/
+/raw_data/
+/outputs/
+/exploratory_outputs/
+/artifacts/
+/logs/
+*.log
+/staging/
+/_staging/
+/release_assets/
+/downloaded-results/
+
+# Bulky generated model/runtime assets
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.om
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.joblib
+*.pkl
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.part[0-9]*
+
+# Generated NPU outputs, not the bundled font or source tree
+/npu/tdha_multilabel_v3/runs/
+/npu/tdha_multilabel_v3/data/
+/npu/tdha_multilabel_v3/dist/
+/npu/tdha_multilabel_v3/local_validation/
+
+# Keep human-readable public evidence, figures and OFL font notices trackable.
+

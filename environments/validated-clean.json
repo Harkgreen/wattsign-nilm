@@ -1,0 +1,13 @@
+{
+  "python": "3.13.13",
+  "platform": "Windows",
+  "packages": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "installation": "Editable installation using scientific-constraints.txt.",
+  "scope": "Base scientific imports and seven bounded dataset-reader checks. This environment contains the scientific dependencies listed here; accelerator dependencies are documented separately."
+}

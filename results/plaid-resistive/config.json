@@ -1,0 +1,42 @@
+{
+  "case_id": "plaid-resistive",
+  "model": "full_random_forest",
+  "features": [
+    "mains_frequency_hz",
+    "voltage_rms",
+    "current_rms",
+    "active_power_w",
+    "apparent_power_va",
+    "power_factor_abs",
+    "phase_difference_deg",
+    "voltage_current_correlation",
+    "current_crest_factor",
+    "current_form_factor",
+    "current_skewness",
+    "current_kurtosis",
+    "current_thd",
+    "vi_loop_area_normalized",
+    "linear_residual_ratio",
+    "current_h2_ratio",
+    "current_h3_ratio",
+    "current_h4_ratio",
+    "current_h5_ratio",
+    "current_h6_ratio",
+    "current_h7_ratio",
+    "current_h8_ratio",
+    "current_h9_ratio",
+    "current_h10_ratio",
+    "current_h11_ratio",
+    "current_h12_ratio",
+    "current_h13_ratio",
+    "current_h14_ratio",
+    "current_h15_ratio"
+  ],
+  "target": "resistive_label",
+  "split": "GroupKFold(5) by location",
+  "threshold": 0.5,
+  "model_files": [
+    "models/full_random_forest.joblib"
+  ],
+  "weight_scope": "Final deployment pipeline fitted on all samples; the OOF evidence comes from separate fold models."
+}

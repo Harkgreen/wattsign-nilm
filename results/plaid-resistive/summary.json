@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "case_id": "plaid-resistive",
+  "title": "PLAID: resistive-load classification",
+  "task": "Binary resistive-load classification on single-device recordings",
+  "method": "Random forest / electrical signatures",
+  "input_resolution": "High-frequency single-device recordings",
+  "samples": 1793,
+  "groups": 55,
+  "folds": 5,
+  "metrics": [
+    {
+      "split": "Location-grouped OOF",
+      "model": "Random forest",
+      "AP": 0.9553393634823333,
+      "Recall": 0.9251559251559252,
+      "F1": 0.9280500521376434,
+      "Precision": 0.9309623430962343,
+      "OFF_FPR": 0.025152439024390245
+    }
+  ],
+  "fold_metrics": [
+    {
+      "average_precision": 0.9694664810873971,
+      "roc_auc": 0.9846530920060331,
+      "precision": 0.9326923076923077,
+      "recall": 0.9326923076923077,
+      "f1": 0.9326923076923077,
+      "balanced_accuracy": 0.9526206636500754,
+      "confusion_matrix_tn_fp_fn_tp": [
+        248,
+        7,
+        7,
+        97
+      ],
+      "fold": 1,
+      "train_samples": 1434,
+      "test_samples": 359,
+      "test_groups": [
+        "house17",
+        "house2",
+        "house20",
+        "house21",
+        "house22",
+        "house43",
+        "house45",
+        "house51",
+        "house52",
+        "house53",
+        "house54"
+      ]
+    },
+    {
+      "average_precision": 0.905304166158247,
+      "roc_auc": 0.9828944640265395,
+      "precision": 0.89,
+      "recall": 0.978021978021978,
+      "f1": 0.9319371727748691,
+      "balanced_accuracy": 0.9682562720298569,
+      "confusion_matrix_tn_fp_fn_tp": [
+        254,
+        11,
+        2,
+        89
+      ],
+      "fold": 2,
+      "train_samples": 1437,
+      "test_samples": 356,
+      "test_groups": [
+        "house1",
+        "house19",
+        "house25",
+        "house28",
+        "house31",
+        "house33",
+        "house39",
+        "house41",
+        "house50",
+        "house8"
+      ]
+    },
+    {
+      "average_precision": 0.9970580348706177,
+      "roc_auc": 0.9991891526645343,
+      "precision": 0.9634146341463414,
+      "recall": 1.0,
+      "f1": 0.9813664596273292,
+      "balanced_accuracy": 0.9946619217081851,
+      "confusion_matrix_tn_fp_fn_tp": [
+        278,
+        3,
+        0,
+        79
+      ],
+      "fold": 3,
+      "train_samples": 1433,
+      "test_samples": 360,
+      "test_groups": [
+        "house11",
+        "house18",
+        "house24",
+        "house26",
+        "house30",
+        "house32",
+        "house37",
+        "house40",
+        "house49",
+        "house6",
+        "house9"
+      ]
+    },
+    {
+      "average_precision": 0.9147528381979447,
+      "roc_auc": 0.9705734225483849,
+      "precision": 0.8857142857142857,
+      "recall": 0.8230088495575221,
+      "f1": 0.8532110091743119,
+      "balanced_accuracy": 0.887114180876322,
+      "confusion_matrix_tn_fp_fn_tp": [
+        234,
+        12,
+        20,
+        93
+      ],
+      "fold": 4,
+      "train_samples": 1434,
+      "test_samples": 359,
+      "test_groups": [
+        "house13",
+        "house15",
+        "house16",
+        "house23",
+        "house27",
+        "house3",
+        "house34",
+        "house36",
+        "house48",
+        "house55",
+        "house7"
+      ]
+    },
+    {
+      "average_precision": 0.9992108787521026,
+      "roc_auc": 0.9997189883580891,
+      "precision": 1.0,
+      "recall": 0.925531914893617,
+      "f1": 0.9613259668508287,
+      "balanced_accuracy": 0.9627659574468085,
+      "confusion_matrix_tn_fp_fn_tp": [
+        265,
+        0,
+        7,
+        87
+      ],
+      "fold": 5,
+      "train_samples": 1434,
+      "test_samples": 359,
+      "test_groups": [
+        "house10",
+        "house12",
+        "house14",
+        "house29",
+        "house35",
+        "house38",
+        "house4",
+        "house42",
+        "house44",
+        "house46",
+        "house47",
+        "house5"
+      ]
+    }
+  ],
+  "features": [
+    "mains_frequency_hz",
+    "voltage_rms",
+    "current_rms",
+    "active_power_w",
+    "apparent_power_va",
+    "power_factor_abs",
+    "phase_difference_deg",
+    "voltage_current_correlation",
+    "current_crest_factor",
+    "current_form_factor",
+    "current_skewness",
+    "current_kurtosis",
+    "current_thd",
+    "vi_loop_area_normalized",
+    "linear_residual_ratio",
+    "current_h2_ratio",
+    "current_h3_ratio",
+    "current_h4_ratio",
+    "current_h5_ratio",
+    "current_h6_ratio",
+    "current_h7_ratio",
+    "current_h8_ratio",
+    "current_h9_ratio",
+    "current_h10_ratio",
+    "current_h11_ratio",
+    "current_h12_ratio",
+    "current_h13_ratio",
+    "current_h14_ratio",
+    "current_h15_ratio"
+  ],
+  "limitations": [
+    "This is binary resistive-label classification, not multiclass appliance recognition.",
+    "OOF predictions come from held-out locations; the provided final pipeline is fitted on all samples and must not be used to reproduce OOF scores on its training data."
+  ],
+  "saved_uncertainty": {
+    "path": "results/plaid-resistive/confidence.json",
+    "status": "not_saved",
+    "scope": "The five-fold grouped OOF results have no recorded confidence intervals. Fold dispersion is not a confidence interval."
+  }
+}

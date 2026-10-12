@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "case_id": "tdha-npu",
+  "title": "TDHA: NPU multi-label training and portable evaluation",
+  "task": "Multi-label socket supply-state recognition",
+  "method": "Frozen N0-W1 reference versus N1-F candidate",
+  "input_resolution": "51.2 kHz waveform / frequency signatures",
+  "history_seconds": 25.6,
+  "seeds": [
+    11,
+    42,
+    73
+  ],
+  "folds": [
+    "A",
+    "B"
+  ],
+  "tasks": [
+    "N0-W1-A-s11",
+    "N0-W1-A-s42",
+    "N0-W1-A-s73",
+    "N0-W1-B-s11",
+    "N0-W1-B-s42",
+    "N0-W1-B-s73",
+    "N1-F-A-s11",
+    "N1-F-A-s42",
+    "N1-F-A-s73",
+    "N1-F-B-s11",
+    "N1-F-B-s42",
+    "N1-F-B-s73"
+  ],
+  "metrics": [
+    {
+      "split": "time",
+      "model": "N0-W1",
+      "backend": "NPU",
+      "AP": 0.8647227947595779,
+      "Recall": 0.9087213870665795,
+      "OFF_FPR": 0.22699111826515578,
+      "F1": 0.6987383208884603
+    },
+    {
+      "split": "cross",
+      "model": "N0-W1",
+      "backend": "CUDA",
+      "AP": 0.7518946575865559,
+      "Recall": 0.5155060880116371,
+      "OFF_FPR": 0.23423974530959984,
+      "F1": 0.2948372429358306
+    },
+    {
+      "split": "time",
+      "model": "N1-F",
+      "backend": "NPU",
+      "AP": 0.949199390546799,
+      "Recall": 0.9314275050458225,
+      "OFF_FPR": 0.1339127440464783,
+      "F1": 0.7075642478992298
+    },
+    {
+      "split": "cross",
+      "model": "N1-F",
+      "backend": "CUDA",
+      "AP": 0.7363726600041554,
+      "Recall": 0.4063073488289417,
+      "OFF_FPR": 0.1724936950043509,
+      "F1": 0.2517767574273124
+    }
+  ],
+  "fold_metrics": [
+    {
+      "split": "time",
+      "fold": "A",
+      "model": "N0-W1",
+      "backend": "NPU",
+      "AP": 0.8232255068416757,
+      "Recall": 0.9221552482520624,
+      "OFF_FPR": 0.2930104882005285,
+      "F1": 0.6316011834946907
+    },
+    {
+      "split": "cross",
+      "fold": "A",
+      "model": "N0-W1",
+      "backend": "CUDA",
+      "AP": 0.7277426515261421,
+      "Recall": 0.4686637644719836,
+      "OFF_FPR": 0.2809815825984927,
+      "F1": 0.27499311994899256
+    },
+    {
+      "split": "time",
+      "fold": "A",
+      "model": "N1-F",
+      "backend": "NPU",
+      "AP": 0.919061301250581,
+      "Recall": 0.9471071133053988,
+      "OFF_FPR": 0.20338753185734726,
+      "F1": 0.6732713767820534
+    },
+    {
+      "split": "cross",
+      "fold": "A",
+      "model": "N1-F",
+      "backend": "CUDA",
+      "AP": 0.7369269960657023,
+      "Recall": 0.36581031370279765,
+      "OFF_FPR": 0.13522229817844744,
+      "F1": 0.20170424153137834
+    },
+    {
+      "split": "time",
+      "fold": "B",
+      "model": "N0-W1",
+      "backend": "NPU",
+      "AP": 0.9062200826774801,
+      "Recall": 0.8952875258810965,
+      "OFF_FPR": 0.16097174832978303,
+      "F1": 0.7658754582822299
+    },
+    {
+      "split": "cross",
+      "fold": "B",
+      "model": "N0-W1",
+      "backend": "CUDA",
+      "AP": 0.7760466636469698,
+      "Recall": 0.5623484115512906,
+      "OFF_FPR": 0.187497908020707,
+      "F1": 0.31468136592266854
+    },
+    {
+      "split": "time",
+      "fold": "B",
+      "model": "N1-F",
+      "backend": "NPU",
+      "AP": 0.979337479843017,
+      "Recall": 0.9157478967862462,
+      "OFF_FPR": 0.06443795623560936,
+      "F1": 0.7418571190164062
+    },
+    {
+      "split": "cross",
+      "fold": "B",
+      "model": "N1-F",
+      "backend": "CUDA",
+      "AP": 0.7358183239426083,
+      "Recall": 0.4468043839550857,
+      "OFF_FPR": 0.20976509183025438,
+      "F1": 0.30184927332324646
+    }
+  ],
+  "frozen_comparison": {
+    "CI": [
+      [
+        -0.02780966996053976,
+        -0.12163911757238038,
+        -0.06899795015730299
+      ],
+      [
+        -0.0032631826263566635,
+        -0.0964919929565196,
+        -0.05456951617630616
+      ]
+    ],
+    "candidate": {
+      "AP": 0.9588050971749957,
+      "FPR": 0.13800591008474,
+      "Recall_delta": 0.04381248706267982,
+      "class_recall_delta": [
+        0.1626015553864244,
+        0.028873453118533954,
+        -0.0017780479956756023,
+        0.029317443850732205,
+        0.06328228216832754,
+        -0.01942176415226371
+      ],
+      "net": "N1",
+      "parameters": 2014859,
+      "protected": true,
+      "rep": "F"
+    },
+    "candidate_reselected": false,
+    "class_recall_delta": [
+      -0.15074079231260437,
+      -0.05652421675721511,
+      0.28958373158316497,
+      -0.4715653342941255,
+      -0.2811088543057511,
+      0.015163030990358503
+    ],
+    "conclusion": "未达到冻结的扩大复验门槛",
+    "criteria": {
+      "Bootstrap有效数量": true,
+      "OFF误报保护": true,
+      "Recall非劣": false,
+      "两折seed一致性": false,
+      "稳态方向": false,
+      "第三脚本缺席类别误报": false,
+      "跨脚本AP提升及CI": false,
+      "逐类别Recall保护": false
+    },
+    "delta": {
+      "AP": -0.01552199758240073,
+      "OFF_FPR": -0.06174605030524899,
+      "Recall": -0.10919873918269547
+    },
+    "evaluation_scope": "Local frozen-weight CPU/CUDA supplemental evaluation; not NPU validation",
+    "paired_method_summary": {
+      "N0-W1": {
+        "AP": 0.7518946575865559,
+        "F1": 0.2948372429358305,
+        "OFF_FPR": 0.23423974530959987,
+        "Recall": 0.5155060880116372
+      },
+      "N1-F": {
+        "AP": 0.7363726600041552,
+        "F1": 0.25177675742731237,
+        "OFF_FPR": 0.17249369500435094,
+        "Recall": 0.4063073488289417
+      }
+    },
+    "seed_AP_improvements": {
+      "A": 2,
+      "B": 0
+    },
+    "steady_AP_delta": -0.014738590885820857,
+    "thresholds_changed": false
+  },
+  "status": {
+    "training": "NPU completed",
+    "npu_execution": "partial",
+    "supplemental_evaluation": "CUDA completed",
+    "weights": "CPU-loadable format verified"
+  },
+  "limitations": [
+    "Candidate N1-F did not pass the original frozen acceptance criteria.",
+    "Local CUDA results do not certify NPU execution completion or cross-hardware numerical equivalence.",
+    "Third-record macro AP/Recall are undefined because class support is incomplete and remain null.",
+    "Socket supply state on exposed controlled records is not appliance power disaggregation or cross-house deployment."
+  ]
+}

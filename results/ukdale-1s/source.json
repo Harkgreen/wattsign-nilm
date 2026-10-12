@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "case_id": "ukdale-1s",
+  "selected_files": [
+    {
+      "published_path": "results/ukdale-1s/models/M0_TCN_F0_seed11.pt",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/checkpoints/stage2_cold2_M0_TCN_F0_seed11.pt",
+      "sha256": "c688ecc65edbb556fdfd8ed610be54d0dff9f2face9d227ce499caa727b90e74",
+      "published_sha256": "c688ecc65edbb556fdfd8ed610be54d0dff9f2face9d227ce499caa727b90e74"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed11_h1.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed11_h1.npz",
+      "sha256": "821ab6b274bb9cba8c8de4021d08d1da1fcce30729e71d719cdb286b4b312784",
+      "published_sha256": "821ab6b274bb9cba8c8de4021d08d1da1fcce30729e71d719cdb286b4b312784"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed11_h2.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed11_h2.npz",
+      "sha256": "5296ba1ce92cdcb6812580099a0b48ccd20b08c62c269354b2b9595af84058c4",
+      "published_sha256": "5296ba1ce92cdcb6812580099a0b48ccd20b08c62c269354b2b9595af84058c4"
+    },
+    {
+      "published_path": "results/ukdale-1s/models/M0_TCN_F0_seed29.pt",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/checkpoints/stage2_cold2_M0_TCN_F0_seed29.pt",
+      "sha256": "cbec592c8aac08045bce001797c7227bb0498778ae14cfedbb256fcd42b811c1",
+      "published_sha256": "cbec592c8aac08045bce001797c7227bb0498778ae14cfedbb256fcd42b811c1"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed29_h1.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed29_h1.npz",
+      "sha256": "732abca5e01bf1f1cd87cc58a507278c72775b876a4b3c265af83a61fc6b97a0",
+      "published_sha256": "732abca5e01bf1f1cd87cc58a507278c72775b876a4b3c265af83a61fc6b97a0"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed29_h2.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed29_h2.npz",
+      "sha256": "59e5781944446aefe524e7cae9e196851cce5c7614bad33a4d88e749e8d1b13c",
+      "published_sha256": "59e5781944446aefe524e7cae9e196851cce5c7614bad33a4d88e749e8d1b13c"
+    },
+    {
+      "published_path": "results/ukdale-1s/models/M0_TCN_F0_seed42.pt",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/checkpoints/stage2_cold2_M0_TCN_F0_seed42.pt",
+      "sha256": "2a0bdc9645e657541a1ab39ea7a990a1d0d2ba8a3edba2a1a701880fc4b13b4e",
+      "published_sha256": "2a0bdc9645e657541a1ab39ea7a990a1d0d2ba8a3edba2a1a701880fc4b13b4e"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed42_h1.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed42_h1.npz",
+      "sha256": "ac45c98cbb1691a483da238e47c1dc135e435fab09214fc12a10a2219013dab9",
+      "published_sha256": "ac45c98cbb1691a483da238e47c1dc135e435fab09214fc12a10a2219013dab9"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed42_h2.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed42_h2.npz",
+      "sha256": "99b798d39e537512632fd664c12379d7ad89fda2a0096d6777c084268c50e6fa",
+      "published_sha256": "99b798d39e537512632fd664c12379d7ad89fda2a0096d6777c084268c50e6fa"
+    },
+    {
+      "published_path": "results/ukdale-1s/models/M0_TCN_F0_seed73.pt",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/checkpoints/stage2_cold2_M0_TCN_F0_seed73.pt",
+      "sha256": "b1e3eba1b1e64822d436064e74d55c88be8648afe893e3ff2743f0e98757c8d9",
+      "published_sha256": "b1e3eba1b1e64822d436064e74d55c88be8648afe893e3ff2743f0e98757c8d9"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed73_h1.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed73_h1.npz",
+      "sha256": "145efc763ca07cfbf0def808465aac0b6490990639fdef645417ee9d2fdf16ce",
+      "published_sha256": "145efc763ca07cfbf0def808465aac0b6490990639fdef645417ee9d2fdf16ce"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed73_h2.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed73_h2.npz",
+      "sha256": "5be9583708dfc4efdec7494c0e4c114004aa50369709a577f9aa96e2b9618995",
+      "published_sha256": "5be9583708dfc4efdec7494c0e4c114004aa50369709a577f9aa96e2b9618995"
+    },
+    {
+      "published_path": "results/ukdale-1s/models/M0_TCN_F0_seed101.pt",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/checkpoints/stage2_cold2_M0_TCN_F0_seed101.pt",
+      "sha256": "2de5c89bcf21072e245ceec0f6df4b980cefd205c4976f5148a7723c8ce51247",
+      "published_sha256": "2de5c89bcf21072e245ceec0f6df4b980cefd205c4976f5148a7723c8ce51247"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed101_h1.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed101_h1.npz",
+      "sha256": "504eee612e7056061878fbc07b10d73e1b518f34fda9d0b78fbee84f723d2fdd",
+      "published_sha256": "504eee612e7056061878fbc07b10d73e1b518f34fda9d0b78fbee84f723d2fdd"
+    },
+    {
+      "published_path": "results/ukdale-1s/predictions/M0_TCN_F0_seed101_h2.npz",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/predictions/cold2_M0_TCN-F0_seed101_h2.npz",
+      "sha256": "9173fd9cee06de1b554e1bca02aa5167fb0fb2edc57bd94040d260b6baea6379",
+      "published_sha256": "9173fd9cee06de1b554e1bca02aa5167fb0fb2edc57bd94040d260b6baea6379"
+    },
+    {
+      "published_path": "results/ukdale-1s/normalizer.json",
+      "container": "ukdale-v11-results-01.zip",
+      "member": "results/ukdale-v11/attempt-07/cache/normalizer_nominal_h1_train.json",
+      "sha256": "110ab5a0273b1aa3c12129335a7bd84b312b4a0cc24ba2bf0203648a2e94f186",
+      "published_sha256": "110ab5a0273b1aa3c12129335a7bd84b312b4a0cc24ba2bf0203648a2e94f186"
+    },
+    {
+      "published_path": "results/ukdale-1s/confidence.json",
+      "container": "wattsign-before-curation.zip",
+      "member": "results/ukdale-v11/attempt-07/tables/h2_bootstrap.csv",
+      "sha256": "15349c9f54087a20eceb9f780a8da363862a549c316d956be0e35b0c65c1998a",
+      "published_sha256": "8580621c52382b87f2092ec4d5e166c90df43d7699158a62853e23fd19cd4c8d",
+      "transformation": "Projection of recorded confidence-interval metadata."
+    }
+  ],
+  "method": "Artifact provenance and metric-row extraction from recorded experiment runs."
+}

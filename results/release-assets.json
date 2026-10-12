@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "project": "WattSign",
+  "checked_on": "2026-10-12",
+  "status_values": [
+    "local_prepared",
+    "public_download",
+    "request_only"
+  ],
+  "assets": [
+    {
+      "filename": "wattsign-models.zip",
+      "bytes": 51086368,
+      "sha256": "286c6b59fab3494b712de4284d05ea2543bfe7d9eb2b7e28c81616c29aea94c6",
+      "files": 88,
+      "status": "request_only",
+      "internal_manifest": "MANIFEST.json",
+      "verified": true,
+      "url": null,
+      "channel": "github_release"
+    },
+    {
+      "filename": "wattsign-predictions.zip",
+      "bytes": 29668263,
+      "sha256": "f734663eedca63c1c0f6c2e45f5a93f49b54b98696b21d81948cee338d9f0a0a",
+      "files": 76,
+      "status": "request_only",
+      "internal_manifest": "MANIFEST.json",
+      "verified": true,
+      "url": null,
+      "channel": "github_release"
+    },
+    {
+      "filename": "wattsign-evidence.zip",
+      "bytes": 230890793,
+      "sha256": "f59c9ebecb94d7293de0af46f9ddcc1d45410f7692d76028cc2da6b036a2da45",
+      "files": 276,
+      "status": "request_only",
+      "internal_manifest": "MANIFEST.json",
+      "verified": true,
+      "url": null,
+      "channel": "zenodo",
+      "code_snapshot": "wattsign-code.zip",
+      "commit_binding": "zenodo-metadata.json"
+    }
+  ],
+  "limits_bytes": {
+    "git_worktree": 20971520,
+    "release_asset": 104857600,
+    "first_release_total": 157286400
+  },
+  "public_release_total_bytes": 80754631,
+  "contact": {
+    "email": "ruizhang.eric@gmail.com",
+    "request_fields": [
+      "case name",
+      "requested files",
+      "intended use"
+    ],
+    "delivery": "download link, individually approved"
+  },
+  "published": false,
+  "doi": null
+}

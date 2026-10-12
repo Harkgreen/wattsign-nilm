@@ -1,0 +1,32 @@
+{
+  "case_id": "ukdale-1s",
+  "model": "M0_TCN-F0",
+  "repeat": "stage2_cold2",
+  "seeds": [
+    11,
+    29,
+    42,
+    73,
+    101
+  ],
+  "input_seconds": 1,
+  "history_seconds": 640,
+  "output_seconds": 10,
+  "threshold_space": "logit",
+  "thresholds": {
+    "11": 4.701135635375977,
+    "29": 4.431591510772705,
+    "42": 4.538013935089111,
+    "73": 3.8070030212402344,
+    "101": 3.633875608444214
+  },
+  "normalizer": "normalizer.json",
+  "model_files": [
+    "models/M0_TCN_F0_seed11.pt",
+    "models/M0_TCN_F0_seed29.pt",
+    "models/M0_TCN_F0_seed42.pt",
+    "models/M0_TCN_F0_seed73.pt",
+    "models/M0_TCN_F0_seed101.pt"
+  ],
+  "feature_definition": "P/Q base18 + six backward Haar scales (2,4,8,16,32,60), 5/6 valid per half; HGB 180 statistics"
+}

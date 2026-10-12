@@ -1,0 +1,11 @@
+# Copy to configs/local.toml to customize this checkout. This example performs no I/O.
+[paths]
+data_root = "datasets"
+output_root = "outputs"
+
+# Each dataset may live outside data_root. Uncomment only paths that exist locally.
+# [datasets]
+# ukdale = "/absolute/path/to/UK-DALE/ukdale"
+# refit = "/absolute/path/to/REFIT"
+# plaid = "/absolute/path/to/PLAID"
+# tdha = "/absolute/path/to/TDHA/V2"

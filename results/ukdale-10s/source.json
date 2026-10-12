@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "case_id": "ukdale-10s",
+  "selected_files": [
+    {
+      "published_path": "results/ukdale-10s/models/PQ_seed11.pt",
+      "container": "ukdale-v6-results-01.zip",
+      "member": "results/ukdale-v6/run/checkpoints/PQ_seed11.pt",
+      "sha256": "4babbfdee1aa4dd252e70d54ad9bd024b96d4c73ef1799f9485b2d64ce8e54d4",
+      "published_sha256": "4babbfdee1aa4dd252e70d54ad9bd024b96d4c73ef1799f9485b2d64ce8e54d4"
+    },
+    {
+      "published_path": "results/ukdale-10s/models/PQ_seed29.pt",
+      "container": "ukdale-v6-results-01.zip",
+      "member": "results/ukdale-v6/run/checkpoints/PQ_seed29.pt",
+      "sha256": "111315aa05cde23e5756d55a56377375e6fbd1a98aa4de31002be886db1f738e",
+      "published_sha256": "111315aa05cde23e5756d55a56377375e6fbd1a98aa4de31002be886db1f738e"
+    },
+    {
+      "published_path": "results/ukdale-10s/models/PQ_seed42.pt",
+      "container": "ukdale-v6-results-01.zip",
+      "member": "results/ukdale-v6/run/checkpoints/PQ_seed42.pt",
+      "sha256": "180fd000485c2dbbea4a904ae5e5a9a82e6762ba3f787721f4148b42c42a9720",
+      "published_sha256": "180fd000485c2dbbea4a904ae5e5a9a82e6762ba3f787721f4148b42c42a9720"
+    },
+    {
+      "published_path": "results/ukdale-10s/models/PQ_seed73.pt",
+      "container": "ukdale-v6-results-01.zip",
+      "member": "results/ukdale-v6/run/checkpoints/PQ_seed73.pt",
+      "sha256": "87f4b89c2b98cf542f9d387fe45bdd1ad1358d7b9676e910d7b1bf67eb5d4205",
+      "published_sha256": "87f4b89c2b98cf542f9d387fe45bdd1ad1358d7b9676e910d7b1bf67eb5d4205"
+    },
+    {
+      "published_path": "results/ukdale-10s/models/PQ_seed101.pt",
+      "container": "ukdale-v6-results-01.zip",
+      "member": "results/ukdale-v6/run/checkpoints/PQ_seed101.pt",
+      "sha256": "001aaaef5b10842cb83bec84d406650f3a7052e5bb667e33dbd8a019d6ce5df0",
+      "published_sha256": "001aaaef5b10842cb83bec84d406650f3a7052e5bb667e33dbd8a019d6ce5df0"
+    },
+    {
+      "published_path": "results/ukdale-10s/normalizer.json",
+      "container": "private-publication-snapshot",
+      "member": "results/ukdale-v5/attempt-02/h1_normalizer.json",
+      "sha256": "e82ff19a3aab96c87051824acb4115ef25dc71b7b4f74ab56c42050bc2aa8d16",
+      "published_sha256": "e82ff19a3aab96c87051824acb4115ef25dc71b7b4f74ab56c42050bc2aa8d16"
+    },
+    {
+      "published_path": "results/ukdale-10s/h1_per_seed.json",
+      "container": "private-publication-snapshot",
+      "member": "results/ukdale-v6/run/tables/H1逐seed指标.csv",
+      "sha256": "3d7c30f269d5c185e1564a3892f3d40829ffc2d660954521e5948571d3326845",
+      "published_sha256": "21cf0afe4eb353b7cdcc1681bc986035e218791b5e9c5e2433f48b7beb6cf3ce"
+    },
+    {
+      "published_path": "results/ukdale-10s/h2_per_seed.json",
+      "container": "private-publication-snapshot",
+      "member": "results/ukdale-v6/run/tables/H2逐seed指标_已暴露探索.csv",
+      "sha256": "1662350d79bb1584b51ede4f0508ed68ae7db42b4268e58e81cf6029596e816f",
+      "published_sha256": "d2e19c398d63d80a9ee43a4d7f66c80ea7f068fadcf50a2555fd28d73ad27ecf"
+    },
+    {
+      "published_path": "results/ukdale-10s/confidence.json",
+      "container": "wattsign-before-curation.zip",
+      "member": "results/ukdale-v6/run/tables/H1模态bootstrap.csv",
+      "sha256": "cfccd1154cc46ef338005b777b6be020cc9412b6fbe5d739d12eec9e96080f4c",
+      "published_sha256": "79ae8d8fb380e0e8d52f07ad328a778684755c76c9eceb042e7b4810cb6fa0de",
+      "transformation": "Projection of recorded confidence-interval metadata."
+    }
+  ],
+  "method": "Artifact provenance and metric-row extraction from recorded experiment runs."
+}

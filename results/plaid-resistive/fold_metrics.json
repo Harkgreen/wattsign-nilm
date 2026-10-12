@@ -1,0 +1,152 @@
+[
+  {
+    "average_precision": 0.9694664810873971,
+    "roc_auc": 0.9846530920060331,
+    "precision": 0.9326923076923077,
+    "recall": 0.9326923076923077,
+    "f1": 0.9326923076923077,
+    "balanced_accuracy": 0.9526206636500754,
+    "confusion_matrix_tn_fp_fn_tp": [
+      248,
+      7,
+      7,
+      97
+    ],
+    "fold": 1,
+    "train_samples": 1434,
+    "test_samples": 359,
+    "test_groups": [
+      "house17",
+      "house2",
+      "house20",
+      "house21",
+      "house22",
+      "house43",
+      "house45",
+      "house51",
+      "house52",
+      "house53",
+      "house54"
+    ]
+  },
+  {
+    "average_precision": 0.905304166158247,
+    "roc_auc": 0.9828944640265395,
+    "precision": 0.89,
+    "recall": 0.978021978021978,
+    "f1": 0.9319371727748691,
+    "balanced_accuracy": 0.9682562720298569,
+    "confusion_matrix_tn_fp_fn_tp": [
+      254,
+      11,
+      2,
+      89
+    ],
+    "fold": 2,
+    "train_samples": 1437,
+    "test_samples": 356,
+    "test_groups": [
+      "house1",
+      "house19",
+      "house25",
+      "house28",
+      "house31",
+      "house33",
+      "house39",
+      "house41",
+      "house50",
+      "house8"
+    ]
+  },
+  {
+    "average_precision": 0.9970580348706177,
+    "roc_auc": 0.9991891526645343,
+    "precision": 0.9634146341463414,
+    "recall": 1.0,
+    "f1": 0.9813664596273292,
+    "balanced_accuracy": 0.9946619217081851,
+    "confusion_matrix_tn_fp_fn_tp": [
+      278,
+      3,
+      0,
+      79
+    ],
+    "fold": 3,
+    "train_samples": 1433,
+    "test_samples": 360,
+    "test_groups": [
+      "house11",
+      "house18",
+      "house24",
+      "house26",
+      "house30",
+      "house32",
+      "house37",
+      "house40",
+      "house49",
+      "house6",
+      "house9"
+    ]
+  },
+  {
+    "average_precision": 0.9147528381979447,
+    "roc_auc": 0.9705734225483849,
+    "precision": 0.8857142857142857,
+    "recall": 0.8230088495575221,
+    "f1": 0.8532110091743119,
+    "balanced_accuracy": 0.887114180876322,
+    "confusion_matrix_tn_fp_fn_tp": [
+      234,
+      12,
+      20,
+      93
+    ],
+    "fold": 4,
+    "train_samples": 1434,
+    "test_samples": 359,
+    "test_groups": [
+      "house13",
+      "house15",
+      "house16",
+      "house23",
+      "house27",
+      "house3",
+      "house34",
+      "house36",
+      "house48",
+      "house55",
+      "house7"
+    ]
+  },
+  {
+    "average_precision": 0.9992108787521026,
+    "roc_auc": 0.9997189883580891,
+    "precision": 1.0,
+    "recall": 0.925531914893617,
+    "f1": 0.9613259668508287,
+    "balanced_accuracy": 0.9627659574468085,
+    "confusion_matrix_tn_fp_fn_tp": [
+      265,
+      0,
+      7,
+      87
+    ],
+    "fold": 5,
+    "train_samples": 1434,
+    "test_samples": 359,
+    "test_groups": [
+      "house10",
+      "house12",
+      "house14",
+      "house29",
+      "house35",
+      "house38",
+      "house4",
+      "house42",
+      "house44",
+      "house46",
+      "house47",
+      "house5"
+    ]
+  }
+]

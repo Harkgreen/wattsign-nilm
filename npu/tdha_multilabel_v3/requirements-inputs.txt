@@ -1,0 +1,5 @@
+# Optional exact historical input reconstruction; separate Python 3.12 environment.
+# Do not mix this NumPy environment with requirements-local.txt.
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.3

@@ -1,0 +1,34 @@
+{
+  "case_id": "ukdale-10s",
+  "model": "TCN/PQ",
+  "seeds": [
+    11,
+    29,
+    42,
+    73,
+    101
+  ],
+  "input_seconds": 10,
+  "history_seconds": 640,
+  "output_seconds": 10,
+  "threshold": 0.9556831121444702,
+  "threshold_space": "probability",
+  "input_channels": [
+    "P",
+    "S_zero",
+    "Q",
+    "P_valid",
+    "S_valid",
+    "Q_valid"
+  ],
+  "normalizer": "normalizer.json",
+  "model_files": [
+    "models/PQ_seed11.pt",
+    "models/PQ_seed29.pt",
+    "models/PQ_seed42.pt",
+    "models/PQ_seed73.pt",
+    "models/PQ_seed101.pt"
+  ],
+  "source_normalizer_sha256": "936fdc3d7de8b8bef195485318fccd5dc6e442f370ca9ce9fa18bf6dc69aef8a",
+  "saved_point_predictions": false
+}

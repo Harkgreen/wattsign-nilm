@@ -1,0 +1,44 @@
+{
+  "case_id": "tdha-waveform",
+  "model": "GRU/W1/L2560",
+  "history_cycles": 2560,
+  "history_seconds": 51.2,
+  "sample_rate_hz": 51200,
+  "folds": [
+    "A",
+    "B"
+  ],
+  "seeds": [
+    11,
+    42,
+    73
+  ],
+  "model_files": [
+    "models/A_11_GRU_W1_L2560.pt",
+    "models/A_42_GRU_W1_L2560.pt",
+    "models/A_73_GRU_W1_L2560.pt",
+    "models/B_11_GRU_W1_L2560.pt",
+    "models/B_42_GRU_W1_L2560.pt",
+    "models/B_73_GRU_W1_L2560.pt"
+  ],
+  "thresholds": {
+    "A_11_GRU_W1_L2560": 5.680393695831299,
+    "A_42_GRU_W1_L2560": 9.019475936889648,
+    "A_73_GRU_W1_L2560": 7.5389204025268555,
+    "B_11_GRU_W1_L2560": 5.559106349945068,
+    "B_42_GRU_W1_L2560": 6.209650039672852,
+    "B_73_GRU_W1_L2560": 7.189565181732178
+  },
+  "normalizers": {
+    "A": "normalizer_A.npz",
+    "B": "normalizer_B.npz"
+  },
+  "periods": [
+    640,
+    1280,
+    2560
+  ],
+  "cadence_train": 50,
+  "cadence_eval": 5,
+  "input_channels": 520
+}

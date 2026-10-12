@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "case_id": "plaid-resistive",
+  "operation": "Confidence-interval fields from recorded experiment analyses.",
+  "status": "not_saved",
+  "scope": "The five-fold grouped OOF results have no recorded confidence intervals. Fold dispersion is not a confidence interval.",
+  "source": {
+    "container": "wattsign-before-curation.zip",
+    "member": "results/plaid-baseline/legacy/metrics.json",
+    "sha256": "b38375a45aa693ef2c4dd5b9046e56df99d53f38673c3169afd7d7a24200d966"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "case_id": "ukdale-1s",
+  "operation": "Confidence-interval fields from recorded experiment analyses.",
+  "status": "saved_paired_effect_intervals",
+  "comparison": "M4 morphology-statistics HGB minus M0_TCN-F0; final cold2 H2 predictions",
+  "seeds": [
+    11,
+    29,
+    42,
+    73,
+    101
+  ],
+  "scope": "Exposed exploratory H2; intervals describe method differences, not standalone uncertainty around TCN absolute metrics.",
+  "bootstrap": {
+    "valid_resamples": 2000,
+    "seed": 42,
+    "AP_unit": "UTC-day blocks, AP recomputed after endpoint resampling",
+    "Recall_unit": "Eligible active events",
+    "high_power_OFF_FPR_unit": "60-minute OFF blocks with aggregate power >=800 W",
+    "conditional_consistency_unit": "Eligible events"
+  },
+  "effects": [
+    {
+      "metric": "AP",
+      "saved_bootstrap_mean_difference": 0.006044551730155945,
+      "ci_lower": -0.017574476078152657,
+      "ci_upper": 0.02152455970644951,
+      "confidence_level": 0.95
+    },
+    {
+      "metric": "Recall",
+      "saved_bootstrap_mean_difference": -0.19264736771583557,
+      "ci_lower": -0.26611173152923584,
+      "ci_upper": -0.12200101464986801,
+      "confidence_level": 0.95
+    },
+    {
+      "metric": "high_power_OFF_FPR",
+      "saved_bootstrap_mean_difference": -0.0035667873453348875,
+      "ci_lower": -0.006124965380877256,
+      "ci_upper": -0.0012854364467784762,
+      "confidence_level": 0.95,
+      "original_metric_name": "关闭FPR ≥800 W"
+    },
+    {
+      "metric": "conditional_consistency",
+      "saved_bootstrap_mean_difference": 0.007683776784688234,
+      "ci_lower": 0.0050985016860067844,
+      "ci_upper": 0.0103994719684124,
+      "confidence_level": 0.95,
+      "original_metric_name": "条件一致率"
+    }
+  ],
+  "source": {
+    "container": "wattsign-before-curation.zip",
+    "member": "results/ukdale-v11/attempt-07/tables/h2_bootstrap.csv",
+    "sha256": "15349c9f54087a20eceb9f780a8da363862a549c316d956be0e35b0c65c1998a"
+  },
+  "method_source": {
+    "container": "wattsign-before-curation.zip",
+    "member": "results/ukdale-v11/attempt-07/protocol/frozen_before_h2.json",
+    "sha256": "6bab86f884752a8feb11e7d321d0d492bc0d64ba1e3a92738273f92df6532540"
+  }
+}

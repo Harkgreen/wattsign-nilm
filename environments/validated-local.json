@@ -1,0 +1,17 @@
+{
+  "python": "3.13.13",
+  "platform": "Windows",
+  "validation_device": "cpu",
+  "packages": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.5.3",
+    "torch": "2.13.0+cu132",
+    "matplotlib": "3.11.1",
+    "Pillow": "12.3.0",
+    "reportlab": null
+  },
+  "scope": "CPU imports and checkpoint compatibility, including legacy MLP state dictionaries loaded with weights_only=True and strict model-state loading. Base scientific installation is recorded in validated-clean.json."
+}

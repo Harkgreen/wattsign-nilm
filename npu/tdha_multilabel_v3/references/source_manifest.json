@@ -1,0 +1,159 @@
+{
+  "regression": {
+    "1": {
+      "basic": "28e155e3f6a05ad37a906241859b3f18e7f7ecfe1746d6c509584cb7644d75c3",
+      "bmask": "8a389eb4c1d973d4f1e89939dbc279581b3ac6a72f5a01957c70990c6d554398",
+      "continuity": "a9098359de9d09024b6afac8ee88c03ab8d38c619316e20ea7f6a47fa063fb8f",
+      "index": "e32ed44a7bc6175c08b25f7ab337c6edfc4ac5c3d44502da981e7f6d0eae431e",
+      "microwave_known": "679012d1d8305473f099853090e3576e1ae0cccb73ab5187b4eb4c06cca5a0c8",
+      "microwave_y": "0fe7c900fdf8745238b7e6a27def9491437a1e512bb845b572d0c91579f0a1a6",
+      "time": "5d6020da31bc0f2f8652339fde0abeaa058661634b6c987aa95180e779ed02ee"
+    },
+    "2": {
+      "basic": "14559318e618aceb63895601577bb50f3eebd5b42791c12509ac7374d1456997",
+      "bmask": "20026b453e71168d31efb0cf025f4e409891ff9b0c527a51ce48e6f7ce07069c",
+      "continuity": "e8fb2f2ffa6b4133b1fde693f66fc1fa66f13524be3dca0d8d422a0967a9aadb",
+      "index": "4e7de648c1c113f13b8f2340d66b0d79c5780affe92248eed7d1a5666be90f65",
+      "microwave_known": "b075fc1e184be44bf96e179b7c1820a55b8aad1df0310e9c524ec4c6b5cf9da2",
+      "microwave_y": "d35a9df804d0e49f3d54f9e5129d0099857f173f9c8a62394102cbcb44da05f5",
+      "time": "77f159f868343f1ec12460cda93dad3bbd30180cbdffbc183dbae42fea9049da"
+    },
+    "3": {
+      "basic": "d8410fc05a6859062235bced2dc39ebb0634e1e4055afcf1536eb39a5c36840b",
+      "bmask": "196885ffd3114fca7d683494eaf39440d49868c07549eabb4c4fccff236b77fb",
+      "continuity": "2523a403a6a51fa1ecb392662c778cb7ee98570e602db42c39263168a675be32",
+      "index": "c766430f5e74f828694267bc7bc457cd7bcbc6d8e046745b659c1e2a4ab3ddc3",
+      "microwave_known": "e7a8a4072de620a98c93d9d8e530b1848069882466f719b8199241978c9696e5",
+      "microwave_y": "bc9e0f68418cbb82011ffd6070ea4265473ae26a8dcf18b7ddbdda5754b70e5d",
+      "time": "b6fa7bff067a04033b2e44c09cbade968633acf614da1b26d18d3bb46a28d4a9"
+    },
+    "4": {
+      "basic": "5d6009a370d32a7de6cdfa2e12c7fa0c60a362b4ed27fd44e5b3bf226eb262c6",
+      "bmask": "df0e55b183d947018610444361679ee949d018c5028d0e1cc6bbbd6a79282085",
+      "continuity": "e47d713a848cad5a3b65b6eada71ff6c6ca60f0c1e687d5253d00e6bdd62da27",
+      "index": "db46f31090713c0203dc13ad816a23dc38f7cc2dc542aac17d682b8c71b40e5d",
+      "microwave_known": "6464a2cd6c7d16641a584273d84ed5d99a8743293e2117a0ccdabe19c552e486",
+      "microwave_y": "047c45a68fb6b4952f2a075c44542a9015a4b208bb9a92757e3d57cb75f077b5",
+      "time": "1a68d6616969a2e3dfafa0ac22582bce8db6b8dec9922104f38d1b996ed3b5dc"
+    },
+    "5": {
+      "basic": "3ac7ed188f4f08e93219b811530dd7e13abe6dfdfc40dba9cf1be4b45d13b42a",
+      "bmask": "a5eebf77ccf7db71ded91235424a8d32350360caa4a722a909bd9dfdc0d68b35",
+      "continuity": "5bf8457cb4d4d078e28c127e175b740c0c188aa1ef11f690d3d48f32b08d593a",
+      "index": "224a04e3300853d1dfd3583df0f7a81758071d8339468dbcdce67cd7bea829a8",
+      "microwave_known": "379b17dc39da140c60c9b01676cffc8ccc6d66f6fcace1279054823124159de1",
+      "microwave_y": "a3d831c2ff0d4093d771984c5339010be54ef1dcad31c690ca84a93eaf46f78f",
+      "time": "71b20bef6b89f1bef21695e6df08d94ecce31e6fac3b63f0aef82956655efadf"
+    },
+    "6": {
+      "basic": "f2987d86642bc98ba164618c5dcdb9f1e2b971974ae795f2c88105109bab610e",
+      "bmask": "05fb3454ec44dee64cb804652fde03aef0ae8c0f93a3401fd2585d4c5dd1a5f7",
+      "continuity": "b622a8064d29dc6cecdd10aa5ccfb69ebb063a508db078ad0f7b65bffd5f9e06",
+      "index": "4b07c12ba67e1dab36d3b3dd71ab029c7e4bee6aa718f9e621be4577a707f604",
+      "microwave_known": "14907083f6dddf3dd022accbca0598116c969c2346c20f37fe91f82a2ec08ef5",
+      "microwave_y": "0baa40517842c7a33e9a091797fc2fd295558c651f93d84381cca70cec9cbd29",
+      "time": "eaf92b050cc6fb8d5264f04b2fe4ea36fa467301924f6fa6c3196b4268f26430"
+    },
+    "7": {
+      "basic": "7e9d62d82c4a0500e50d0552dc89e2459a2e7d6bdd476da20dc85d4dd126c4c5",
+      "bmask": "28b32edfd0f3966dff0133f74e1618cce59268f16cdfb220b6fcb3cbb634ea4f",
+      "continuity": "8758dceada4263cb474efc11eb0c8a9ad759a459d4722c3b62faf6ffa9f8cd6b",
+      "index": "444a3e5e22d20cd79a3c35e4d0d23ca4a0799be4fb25733d5f2de9b5829c204f",
+      "microwave_known": "3b6e74f147258c9e593b0b4bd6b840977e22d8b30fbf9bd7553b0d633b8cc001",
+      "microwave_y": "d4b5466afa50845167b5ee5d83f746beca12a4cf647e4ea6c279bbd7d1a66157",
+      "time": "c28fcdfa78f9b476b548cfdcc0b6c72a06bcbf94e2e6e13a8a590c7d618dd923"
+    }
+  },
+  "scope": "TDHA only",
+  "sources": {
+    "Aggregate.zip": {
+      "sha256": "0ba93d52602804a6d87e7a0d413e1647eb92e05f4c10ef1b9171e91d5400a949",
+      "size": 4651833023
+    },
+    "Displayer.zip": {
+      "sha256": "3b069767d773d1376cc38a21dc350698b3918281fd774eea231f7457ea256e54",
+      "size": 1492992146
+    },
+    "EggBoiler.zip": {
+      "sha256": "6dd42426a574e97d22a35ac482a5dd1fb208165d06cb588009c191cf0829af6f",
+      "size": 2086798152
+    },
+    "Fan_1stSpeed.zip": {
+      "sha256": "f80106db16774f96cc214aa5425beb7369c0fa002b36c3a7820b11bc2dce2600",
+      "size": 1880652530
+    },
+    "Fan_3rdSpeed.zip": {
+      "sha256": "fd60155855868f26b8a7d92c861e8fce6c52bb62aa83dcd88817a760abb4a4c3",
+      "size": 1821337207
+    },
+    "Hairdryer_1stSpeedCoolWind.zip": {
+      "sha256": "fb8875d920ce5b4e20cb7d83e430a32944034bb8ae8560e8f0d7d216d686c285",
+      "size": 1955986276
+    },
+    "Hairdryer_1stSpeedLowTemperatureWind.zip": {
+      "sha256": "83d5afc106d171671d1f20ce145962a2c38562cb84ba460046cd251560e75073",
+      "size": 2083042388
+    },
+    "LargeHumidifierHalfPower.zip": {
+      "sha256": "ffa69838d8cd4dcac44e1b3e4a16665d1911788894ce057d99cfc3b2daf337dd",
+      "size": 2115011385
+    },
+    "LargeHumidifierMaxPower.zip": {
+      "sha256": "8cd2b3e56b1f1d91610d016ebc1cbdeb8c83e215c80881044abcfc81ddb4f3da",
+      "size": 1863636354
+    },
+    "LargeHumidifierQuarterPower.zip": {
+      "sha256": "31e64291eddd93bc5d2675fac60457ff8e622802fe4b307c9a5906192d893111",
+      "size": 1878351932
+    },
+    "LargeHumidifierThreeQuartersPower.zip": {
+      "sha256": "3ee045540b2b34de43d4569f9d83f7cf65377177f16618b073b497518f5b036a",
+      "size": 1773427119
+    },
+    "MicrowaveDefrosting.zip": {
+      "sha256": "28f45d123f742f4d39d86746354e6e8be9cef3b238d40e131df5b167f9a3b69e",
+      "size": 2536241214
+    },
+    "MicrowaveHighHeat.zip": {
+      "sha256": "02b6cb5e3702ee0488c7a684e31395e7aa0fbc5bb784a1de300aad2e94f3e939",
+      "size": 2569575781
+    },
+    "MicrowaveLowHeat.zip": {
+      "sha256": "2327985583583b303d0214dd162e452872df31b498c578725b37fec85e374a3b",
+      "size": 2173232505
+    },
+    "MicrowaveMediumHeat.zip": {
+      "sha256": "26fbe92d2a77bd8a8846d7088ddef307756d13e73c370bac30f601224d48d112",
+      "size": 2326663143
+    },
+    "MobilePhone.zip": {
+      "sha256": "b86967069e2ad572ff131e2fb5e049aa316e6cddf4cf8211b43406957f6d0461",
+      "size": 1826853784
+    },
+    "Router.zip": {
+      "sha256": "4882f0483b6e9e3aae531a29c04e116ea06e974f1cfbe2de73953f67e0f9b530",
+      "size": 1732980589
+    },
+    "SmallHumidifierHalfPower.zip": {
+      "sha256": "8e9341fa814c2437779a5f590242f2f2fd85643cfc1cd69960838f0d2d426d03",
+      "size": 2127560467
+    },
+    "SmallHumidifierMaxPower.zip": {
+      "sha256": "11a1783f9ee7a603e687e8eba9e0572d4bbc8b98dfcaa8998d2a0540b5f850fc",
+      "size": 1880610947
+    },
+    "SocketRecord.xlsx": {
+      "sha256": "cd2a9784e84575bef3731bae6ed941d383ce5cf72f63ecf23263d4dc8b3c24ec",
+      "size": 38544
+    },
+    "TableLamp.zip": {
+      "sha256": "889ac327f6ff520de2a79cfaacaf8bf1a863459bc73763e69779c55a1d7ff4bb",
+      "size": 1840644723
+    },
+    "WaterHeater.zip": {
+      "sha256": "2b07780f7ab33fdfcfb3293512137b0363ab86a8f7e6bbdc7ff5c69253ddf875",
+      "size": 2264837998
+    }
+  },
+  "来源": "V2 继承的 V1 逐周期时间线；仅打包哈希，不打包原始数据"
+}

@@ -1,0 +1,10 @@
+# Verified local evaluation versions. Install CPU or CUDA PyTorch explicitly for your platform.
+# Reference runtime: Python 3.13.13; torch 2.13.0+cu132; NumPy 2.5.2.
+# CPU conversion does not require torch-npu or a GPU.
+numpy==2.5.2
+torch==2.13.0
+pandas==3.0.5
+scikit-learn==1.9.0
+threadpoolctl==3.6.0
+scipy==1.18.0
+psutil==7.2.2

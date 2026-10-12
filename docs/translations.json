@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "languages": [
+    "en",
+    "zh-cn"
+  ],
+  "pairs": [
+    {
+      "en": "en/README.md",
+      "zh-cn": "zh-cn/README.md"
+    },
+    {
+      "en": "en/quickstart.md",
+      "zh-cn": "zh-cn/quickstart.md"
+    },
+    {
+      "en": "en/data.md",
+      "zh-cn": "zh-cn/data.md"
+    },
+    {
+      "en": "en/methods.md",
+      "zh-cn": "zh-cn/methods.md"
+    },
+    {
+      "en": "en/results.md",
+      "zh-cn": "zh-cn/results.md"
+    },
+    {
+      "en": "en/runtime.md",
+      "zh-cn": "zh-cn/runtime.md"
+    },
+    {
+      "en": "en/references.md",
+      "zh-cn": "zh-cn/references.md"
+    }
+  ]
+}

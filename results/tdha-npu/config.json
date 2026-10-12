@@ -1,0 +1,37 @@
+{
+  "case_id": "tdha-npu",
+  "tasks": [
+    "N0-W1-A-s11",
+    "N0-W1-A-s42",
+    "N0-W1-A-s73",
+    "N0-W1-B-s11",
+    "N0-W1-B-s42",
+    "N0-W1-B-s73",
+    "N1-F-A-s11",
+    "N1-F-A-s42",
+    "N1-F-A-s73",
+    "N1-F-B-s11",
+    "N1-F-B-s42",
+    "N1-F-B-s73"
+  ],
+  "model_files": [
+    "models/N0-W1-A-s11/best.cpu.pt",
+    "models/N0-W1-A-s42/best.cpu.pt",
+    "models/N0-W1-A-s73/best.cpu.pt",
+    "models/N0-W1-B-s11/best.cpu.pt",
+    "models/N0-W1-B-s42/best.cpu.pt",
+    "models/N0-W1-B-s73/best.cpu.pt",
+    "models/N1-F-A-s11/best.cpu.pt",
+    "models/N1-F-A-s42/best.cpu.pt",
+    "models/N1-F-A-s73/best.cpu.pt",
+    "models/N1-F-B-s11/best.cpu.pt",
+    "models/N1-F-B-s42/best.cpu.pt",
+    "models/N1-F-B-s73/best.cpu.pt"
+  ],
+  "normalizers": {
+    "A": "normalizer_A.json",
+    "B": "normalizer_B.json"
+  },
+  "source_hash_rule": "Original frozen tensor hashes preserved; file hashes describe the actual distributed format.",
+  "metadata_derivation": "Labels, masks, times and endpoints selected unchanged from the checksum-verified restored inputs; no electrical waveform or feature arrays included."
+}

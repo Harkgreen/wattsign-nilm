@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "case_id": "ukdale-1s",
+  "title": "UK-DALE: 1-second input",
+  "task": "Microwave state recognition",
+  "method": "M0_TCN-F0",
+  "input_resolution": "1 second; evaluation endpoints every 10 seconds",
+  "history_seconds": 640,
+  "seeds": [
+    11,
+    29,
+    42,
+    73,
+    101
+  ],
+  "metrics": [
+    {
+      "split": "H1 earlier",
+      "model": "M0_TCN-F0",
+      "AP": 0.7974908839983581,
+      "Recall": 0.9626865671641791,
+      "F1": 0.7393522182880206,
+      "high_power_OFF_FPR": 0.03367875647668393
+    },
+    {
+      "split": "H1 later",
+      "model": "M0_TCN-F0",
+      "AP": 0.6953961568264162,
+      "Recall": 0.8953103448275861,
+      "F1": 0.709762615183793,
+      "high_power_OFF_FPR": 0.04323559810694664
+    },
+    {
+      "split": "H2",
+      "model": "M0_TCN-F0",
+      "AP": 0.9660600398994893,
+      "Recall": 0.9426992896606157,
+      "F1": 0.9387261413678377,
+      "high_power_OFF_FPR": 0.006555934440655593
+    }
+  ],
+  "necessary_comparison": {
+    "model": "HGB reference",
+    "split": "H2",
+    "AP": 0.9720330970950736,
+    "Recall": 0.7504340962904499,
+    "high_power_OFF_FPR": 0.002991970080299197
+  },
+  "aggregation": "Arithmetic means of the existing five seed metrics; no prediction metrics recomputed.",
+  "limitations": [
+    "The HGB reference does not replace the TCN on recall protection.",
+    "This study uses recorded household splits and prior data exposure; it is not a deployment guarantee."
+  ],
+  "saved_uncertainty": {
+    "path": "results/ukdale-1s/confidence.json",
+    "status": "saved_paired_effect_intervals",
+    "scope": "Exposed exploratory H2; intervals describe method differences, not standalone uncertainty around TCN absolute metrics."
+  }
+}

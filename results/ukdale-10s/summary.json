@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "case_id": "ukdale-10s",
+  "title": "UK-DALE: 10-second input",
+  "task": "Microwave state recognition",
+  "method": "Causal TCN / P+Q",
+  "input_resolution": "10 seconds",
+  "history_seconds": 640,
+  "seeds": [
+    11,
+    29,
+    42,
+    73,
+    101
+  ],
+  "metrics": [
+    {
+      "split": "H1",
+      "model": "TCN/PQ",
+      "AP": 0.5572644336931211,
+      "Recall": 0.976865671641791,
+      "F1": 0.46504843496758613,
+      "Precision": 0.30703960420496096,
+      "high_power_OFF_FPR": 0.10704663212435232
+    },
+    {
+      "split": "H2",
+      "model": "TCN/PQ",
+      "AP": 0.8931755981322326,
+      "Recall": 0.9597474348855565,
+      "F1": 0.8841788354223624,
+      "Precision": 0.8244019554732072,
+      "high_power_OFF_FPR": 0.02076779232207678
+    }
+  ],
+  "limitations": [
+    "H2 is an exposed exploratory check, not an untouched deployment validation.",
+    "Independent point predictions were not saved; existing metrics and prediction hashes are preserved."
+  ],
+  "metric_sources": [
+    {
+      "member": "results/ukdale-v6/run/tables/H1均值指标.csv",
+      "sha256": "6f442cea4cdeba10102eaa18b143e9b994a0376993b240fee7880bec7da6fc4c"
+    },
+    {
+      "member": "results/ukdale-v6/run/tables/H2均值指标_已暴露探索.csv",
+      "sha256": "cf034678fb8074674834b8824e9b097f3d3672561b683afa46df56fd8a8ee7e9"
+    }
+  ],
+  "saved_uncertainty": {
+    "path": "results/ukdale-10s/confidence.json",
+    "status": "saved_lower_bounds_only",
+    "scope": "The 2.5th-percentile lower endpoints of paired 95% percentile intervals were saved; upper endpoints were not saved in this table. No H2 CI is available for PQ."
+  }
+}

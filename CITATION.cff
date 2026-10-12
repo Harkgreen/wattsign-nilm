@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use WattSign, cite this software, the software version or commit, and the relevant datasets and methods."
+type: software
+title: "WattSign: Electrical Signatures for Appliance Recognition"
+authors:
+  - name: "Harkgreen"
+    email: "ruizhang.eric@gmail.com"
+license: MIT
+abstract: >-
+  Electrical signal processing and causal models for appliance recognition
+  from aggregate power and voltage-current measurements. Five experiments
+  cover UK-DALE, TDHA and PLAID, with training workflows, evaluation metrics,
+  NPU training results, CUDA supplemental evaluation and CPU weight conversion.
+keywords:
+  - non-intrusive load monitoring
+  - appliance recognition
+  - electrical signatures
+  - causal time series
+  - energy digitalization

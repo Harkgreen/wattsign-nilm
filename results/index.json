@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "project": "WattSign",
+  "experiments": [
+    {
+      "id": "ukdale-10s",
+      "title": "UK-DALE: 10-second input",
+      "status": "saved_results",
+      "summary": "Microwave state recognition — Causal TCN / P+Q",
+      "path": "results/ukdale-10s/summary.json",
+      "assets": [
+        {
+          "filename": "wattsign-models.zip",
+          "content_path": "results/ukdale-10s",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        }
+      ],
+      "source": "results/ukdale-10s/source.json"
+    },
+    {
+      "id": "ukdale-1s",
+      "title": "UK-DALE: 1-second input",
+      "status": "saved_results",
+      "summary": "Microwave state recognition — M0_TCN-F0",
+      "path": "results/ukdale-1s/summary.json",
+      "assets": [
+        {
+          "filename": "wattsign-models.zip",
+          "content_path": "results/ukdale-1s",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        },
+        {
+          "filename": "wattsign-predictions.zip",
+          "content_path": "results/ukdale-1s",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        }
+      ],
+      "source": "results/ukdale-1s/source.json"
+    },
+    {
+      "id": "tdha-waveform",
+      "title": "TDHA: high-frequency waveform recognition",
+      "status": "saved_results",
+      "summary": "Microwave state recognition — Frozen GRU / phase-aligned waveform W1",
+      "path": "results/tdha-waveform/summary.json",
+      "assets": [
+        {
+          "filename": "wattsign-models.zip",
+          "content_path": "results/tdha-waveform",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        },
+        {
+          "filename": "wattsign-predictions.zip",
+          "content_path": "results/tdha-waveform",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        }
+      ],
+      "source": "results/tdha-waveform/source.json"
+    },
+    {
+      "id": "plaid-resistive",
+      "title": "PLAID: resistive-load classification",
+      "status": "saved_results",
+      "summary": "Binary resistive-load classification on single-device recordings — Random forest / electrical signatures",
+      "path": "results/plaid-resistive/summary.json",
+      "assets": [
+        {
+          "filename": "wattsign-models.zip",
+          "content_path": "results/plaid-resistive",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        },
+        {
+          "filename": "wattsign-predictions.zip",
+          "content_path": "results/plaid-resistive",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        }
+      ],
+      "source": "results/plaid-resistive/source.json"
+    },
+    {
+      "id": "tdha-npu",
+      "title": "TDHA: NPU multi-label training and portable evaluation",
+      "status": "saved_results",
+      "summary": "Multi-label socket supply-state recognition — Frozen N0-W1 reference versus N1-F candidate",
+      "path": "results/tdha-npu/summary.json",
+      "assets": [
+        {
+          "filename": "wattsign-models.zip",
+          "content_path": "results/tdha-npu",
+          "channel": "github_release",
+          "status": "request_only",
+          "url": null
+        },
+        {
+          "filename": "wattsign-evidence.zip",
+          "content_path": "results/tdha-npu",
+          "channel": "zenodo",
+          "status": "request_only",
+          "url": null
+        }
+      ],
+      "source": "results/tdha-npu/source.json"
+    }
+  ]
+}

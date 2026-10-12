@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "case_id": "tdha-waveform",
+  "operation": "Confidence-interval fields from recorded experiment analyses.",
+  "status": "saved_paired_effect_intervals",
+  "comparison": "Frozen GRU/W1/L2560 minus TCN/P/L640",
+  "candidate": [
+    "GRU",
+    "W1",
+    2560
+  ],
+  "reference": [
+    "TCN",
+    "P",
+    640
+  ],
+  "seeds": [
+    11,
+    42,
+    73
+  ],
+  "folds": [
+    "A",
+    "B"
+  ],
+  "scope": "Controlled, previously exposed cross-script TDHA records. Three configuration factors change together: architecture, representation and history. These are paired effect intervals, not absolute metric CIs.",
+  "bootstrap": {
+    "valid_resamples": 2000,
+    "unit": "Paired 60-second record blocks; replicate effects averaged equally across record/seed/fold units",
+    "AP_and_recall_units": 12,
+    "OFF_FPR_units": 18
+  },
+  "effects": [
+    {
+      "metric": "AP",
+      "point_difference": 0.12060508091619726,
+      "ci_lower": 0.10187047719955444,
+      "ci_upper": 0.14207887649536133,
+      "units": 12,
+      "confidence_level": 0.95
+    },
+    {
+      "metric": "recall",
+      "point_difference": -0.009909695983290709,
+      "ci_lower": -0.0357624813914299,
+      "ci_upper": 0.018690243363380432,
+      "units": 12,
+      "confidence_level": 0.95
+    },
+    {
+      "metric": "off_FPR",
+      "point_difference": -0.43977321267999014,
+      "ci_lower": -0.4647005498409271,
+      "ci_upper": -0.4166984260082245,
+      "units": 18,
+      "confidence_level": 0.95
+    }
+  ],
+  "source": {
+    "container": "wattsign-before-curation.zip",
+    "member": "results/tdha-v2/run/main/protocol/verdict.json",
+    "sha256": "644a4150339f9e16a026a81642769108d99237bed323fc0f0c19504ec5166f5c"
+  },
+  "method_source": {
+    "container": "wattsign-before-curation.zip",
+    "member": "research/tdha_microwave_high_frequency_representation_history_v2.py",
+    "sha256": "5f01ac64aa35d3ba215037d1fcfa63f0231a3e6ae6948d43c6e4565fbe293241"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "case_id": "ukdale-10s",
+  "operation": "Confidence-interval fields from recorded experiment analyses.",
+  "status": "saved_lower_bounds_only",
+  "comparison": "PQ minus P-only A, same causal TCN; H1 only",
+  "seeds": [
+    11,
+    29,
+    42,
+    73,
+    101
+  ],
+  "scope": "The 2.5th-percentile lower endpoints of paired 95% percentile intervals were saved; upper endpoints were not saved in this table. No H2 CI is available for PQ.",
+  "bootstrap": {
+    "iterations": 2000,
+    "seed": 42,
+    "AP_unit": "Eligible UTC days containing both classes; daily AP differences averaged across five seeds, then days resampled",
+    "conditional_consistency_unit": "Common eligible events; per-event differences averaged across five seeds, then events resampled"
+  },
+  "effects": [
+    {
+      "metric": "mean_daily_AP_difference",
+      "point_difference": 0.5860147755928456,
+      "ci_lower": 0.49896885574270067,
+      "ci_upper": null,
+      "confidence_level": 0.95,
+      "note": "This daily equal-weight effect is not the difference between whole-period mean AP values shown in the main case table."
+    },
+    {
+      "metric": "conditional_consistency_difference",
+      "point_difference": 0.2393768466556196,
+      "ci_lower": 0.2075169679418176,
+      "ci_upper": null,
+      "confidence_level": 0.95,
+      "eligible_events": 54
+    }
+  ],
+  "source": {
+    "container": "wattsign-before-curation.zip",
+    "member": "results/ukdale-v6/run/tables/H1模态bootstrap.csv",
+    "sha256": "cfccd1154cc46ef338005b777b6be020cc9412b6fbe5d739d12eec9e96080f4c"
+  },
+  "method_source": {
+    "container": "wattsign-before-curation.zip",
+    "member": "research/tcn_microwave_rich_input_mechanism_audit_v6.py",
+    "sha256": "135e1fbd70abc9139f4dcaf47e7d945868dc412378af091e88721bc26b9191d1"
+  }
+}

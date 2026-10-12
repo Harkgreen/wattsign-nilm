@@ -1,0 +1,395 @@
+schema_version: "0.1.0-draft"
+status: research_definition
+
+target:
+  id: resistive_heating
+  binary_positive_label: 1
+  binary_negative_label: 0
+  definition: >-
+    Dormitory-oriented appliances whose intended primary function is resistive
+    heating. This is not a label for every electrically resistive load.
+
+usage_contract:
+  model_inputs:
+    - aggregate_derived_power_features
+    - aggregate_derived_temporal_features
+    - feature_masks
+  metadata_only:
+    - dataset
+    - house_id
+    - channel_id
+    - source_appliance
+    - submeter_power
+    - true_duration
+  primary_training_filter:
+    data_use: main
+    minimum_confidence: high
+
+semantic_classes:
+  core_positive:
+    binary_label: 1
+    canonical_appliances:
+      - kettle
+      - toaster
+      - electric_heater
+  extended_clean_positive:
+    binary_label: 1
+    default_data_use: transfer_only
+    canonical_appliances:
+      - hair_dryer
+      - straighteners
+      - iron
+  negative:
+    binary_label: 0
+    description: Clearly non-heating loads for the first MVP.
+  hard_negative:
+    binary_label: 0
+    canonical_appliances:
+      - microwave
+      - vacuum_cleaner
+      - treadmill
+    description: High-power or motor loads used to detect a power-magnitude shortcut.
+  ignore:
+    binary_label: null
+    description: Ambiguous, mixed, complex-cycle, unknown, or out-of-scope channels.
+
+canonical_rules:
+  negative:
+    - fridge
+    - freezer
+    - fridge_freezer
+    - tv
+    - computer
+    - laptop
+    - monitor
+    - router
+    - modem
+    - hifi
+    - speaker
+    - fan
+    - pump
+    - lighting
+  ignore:
+    - washing_machine
+    - dishwasher
+    - tumble_dryer
+    - washer_dryer
+    - oven
+    - cooker
+    - electric_hob
+    - rice_cooker
+    - breadmaker
+    - coffee_machine
+    - soldering_iron
+    - boiler
+    - dehumidifier
+    - unknown
+    - not_used
+    - mixed_plug_site
+
+house_policies:
+  refit:
+    "10":
+      aggregate_quality: normal
+      data_use: robustness_only
+      reason: >-
+        Multiple IAM channels changed purpose. The whole house stays outside the
+        main MVP until time-valid channel mappings are implemented.
+    "11":
+      aggregate_quality: pv_affected
+      data_use: robustness_only
+      reason: Aggregate is affected by solar panels.
+    "21":
+      aggregate_quality: pv_affected
+      data_use: robustness_only
+      reason: Aggregate is affected by solar panels.
+    "12":
+      aggregate_quality: normal
+      data_use: main_with_channel_filters
+      reason: README and MetaData_Tables.xlsx disagree for Appliance2 through Appliance9.
+    "13":
+      aggregate_quality: normal
+      data_use: main_with_channel_filters
+      reason: Several channel names disagree between README and MetaData_Tables.xlsx.
+  uk_dale:
+    "4":
+      aggregate_quality: normal
+      data_use: main_with_channel_filters
+      reason: Several submeter channels combine multiple appliances.
+
+time_valid_overrides:
+  - dataset: refit
+    house_id: 10
+    channel_id: Appliance1
+    raw_label: Fridge
+    canonical_appliance: fridge
+    semantic_class: negative
+    binary_label: 0
+    confidence: high
+    valid_from: null
+    valid_to: "2014-06-17T00:00:00Z"
+    data_use: robustness_only
+    quality_flags:
+      - documented_channel_reassignment
+    reason: Channel changed from fridge to blender on 2014-06-17.
+  - dataset: refit
+    house_id: 10
+    channel_id: Appliance1
+    raw_label: transition_day
+    canonical_appliance: unknown
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: "2014-06-17T00:00:00Z"
+    valid_to: "2014-06-18T00:00:00Z"
+    data_use: ignore
+    quality_flags:
+      - documented_channel_reassignment
+    reason: Exact device-change timestamp is unknown, so the whole date is isolated.
+  - dataset: refit
+    house_id: 10
+    channel_id: Appliance1
+    raw_label: Blender
+    canonical_appliance: blender
+    semantic_class: hard_negative
+    binary_label: 0
+    confidence: medium
+    valid_from: "2014-06-18T00:00:00Z"
+    valid_to: null
+    data_use: robustness_only
+    quality_flags:
+      - documented_channel_reassignment
+    reason: Channel changed from fridge to blender on 2014-06-17.
+channel_overrides:
+  - dataset: refit
+    house_id: 10
+    channel_id: Appliance2
+    raw_label: Freezer / Toaster
+    canonical_appliance: unknown
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - readme_workbook_date_conflict
+      - documented_channel_reassignment
+    reason: >-
+      README gives the change date as 2014-06-25, while MetaData_Tables.xlsx
+      gives 2014-10-17. The channel remains ignored until the date is resolved.
+  - dataset: uk_dale
+    house_id: 1
+    channel_id: channel_10
+    raw_label: kettle
+    canonical_appliance: mixed_kettle_food_processor_sandwich_maker
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: weak_label_only
+    weak_label_candidate: kettle
+    quality_flags:
+      - mixed_appliance_meter
+      - documented_temporary_channel_swap
+      - intermittent_meter_coverage
+    reason: >-
+      Metadata lists several appliances on this meter, and channels 10/11 were
+      swapped during 2013-06-24 through 2013-06-28.
+  - dataset: uk_dale
+    house_id: 1
+    channel_id: channel_11
+    raw_label: toaster
+    canonical_appliance: mixed_toaster_kitchen_aid_food_processor
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: weak_label_only
+    weak_label_candidate: toaster
+    quality_flags:
+      - mixed_appliance_meter
+      - documented_temporary_channel_swap
+      - intermittent_meter_coverage
+    reason: >-
+      Metadata lists several appliances on this meter, and channels 10/11 were
+      swapped during 2013-06-24 through 2013-06-28.
+  - dataset: refit
+    house_id: 8
+    channel_id: Appliance5
+    raw_label: Toaster / DAB Radio
+    canonical_appliance: mixed_toaster_radio
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - mixed_target_and_nontarget
+    reason: README notes a radio on the nominal toaster IAM.
+  - dataset: refit
+    house_id: 12
+    channel_id: Appliance2-Appliance9
+    raw_label: metadata_conflict
+    canonical_appliance: unknown
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - readme_workbook_conflict
+    reason: README and MetaData_Tables.xlsx disagree across these channels.
+  - dataset: refit
+    house_id: 13
+    channel_id: Appliance2,Appliance5,Appliance6,Appliance7
+    raw_label: metadata_conflict
+    canonical_appliance: unknown
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - readme_workbook_conflict
+    reason: Only channels where README and workbook agree remain eligible.
+  - dataset: refit
+    house_id: 15
+    channel_id: Appliance8
+    raw_label: Kettle / Hi-Fi conflict
+    canonical_appliance: unknown
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - readme_workbook_conflict
+    reason: README says Kettle while MetaData_Tables.xlsx says Hi-Fi.
+  - dataset: refit
+    house_id: 19
+    channel_id: Appliance8
+    raw_label: Lamp / Games Console conflict
+    canonical_appliance: unknown
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - readme_workbook_conflict
+    reason: README says 80 W Lamp while MetaData_Tables.xlsx says Games Console.
+  - dataset: refit
+    house_id: 16
+    channel_id: Appliance3
+    raw_label: Electric Heater (1)?
+    canonical_appliance: electric_heater
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - uncertain_label
+    reason: Source metadata includes a question mark.
+  - dataset: refit
+    house_id: 16
+    channel_id: Appliance9
+    raw_label: Dehumidifier/Heater
+    canonical_appliance: mixed_dehumidifier_heater
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - mixed_device_label
+    reason: The channel crosses target and non-target device semantics.
+  - dataset: refit
+    house_id: 17
+    channel_id: Appliance8
+    raw_label: Kettle / Toaster and Misc
+    canonical_appliance: mixed_kettle_toaster_misc
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - mixed_target_and_unknown
+    reason: README notes miscellaneous devices on the nominal kettle channel.
+  - dataset: refit
+    house_id: 17
+    channel_id: Appliance9
+    raw_label: Plug Site (Bedroom)
+    canonical_appliance: mixed_bedroom_plug_site
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: weak_label_only
+    weak_label_candidate: hair_dryer
+    quality_flags:
+      - mixed_plug_site
+    reason: TV, laptop, hair dryer, and phone charger may share the channel.
+  - dataset: refit
+    house_id: 21
+    channel_id: Appliance7
+    raw_label: Kettle/Toaster
+    canonical_appliance: kettle_toaster
+    semantic_class: core_positive
+    binary_label: 1
+    confidence: medium
+    valid_from: null
+    valid_to: null
+    data_use: robustness_only
+    quality_flags:
+      - combined_positive_label
+      - pv_affected_aggregate
+    reason: Both possible appliances are positive, but device-level evaluation is impossible.
+  - dataset: uk_dale
+    house_id: 4
+    channel_id: channel_3
+    raw_label: kettle_radio
+    canonical_appliance: mixed_kettle_radio
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - mixed_target_and_nontarget
+    reason: A target appliance and a non-target appliance share the channel.
+  - dataset: uk_dale
+    house_id: 4
+    channel_id: channel_6
+    raw_label: washing_machine_microwave_breadmaker
+    canonical_appliance: mixed_complex_appliances
+    semantic_class: ignore
+    binary_label: null
+    confidence: high
+    valid_from: null
+    valid_to: null
+    data_use: ignore
+    quality_flags:
+      - multiple_appliances_same_channel
+    reason: Multiple complex appliances share the channel.
+
+data_usage_notes:
+  - Use the stated resistive-heating target definition for event labels.
+  - Use only data_use=main and confidence=high in the primary smoke test.
+  - Never use weak labels in the primary test set.
+  - Keep every house wholly inside exactly one split.
+  - Fit scalers and missing-value statistics on training houses only.

@@ -1,0 +1,12 @@
+# Use an isolated Python 3.11 environment; keep the existing CANN/driver stack.
+-c constraints-server.txt
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+pillow
+reportlab
+psutil
+# The accelerator stack is installed separately and checked by doctor.
+# torch==2.7.1+cpu ; torch-npu==2.7.1.post8 ; CANN 9.1.0

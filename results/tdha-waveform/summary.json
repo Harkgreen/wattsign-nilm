@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "tdha-waveform",
+  "title": "TDHA: high-frequency waveform recognition",
+  "task": "Microwave state recognition",
+  "method": "Frozen GRU / phase-aligned waveform W1",
+  "input_resolution": "51.2 kHz waveform",
+  "history_seconds": 51.2,
+  "folds": [
+    "A",
+    "B"
+  ],
+  "seeds": [
+    11,
+    42,
+    73
+  ],
+  "metrics": [
+    {
+      "split": "Cross-record",
+      "model": "GRU/W1/L2560",
+      "AP": 0.9842815691368078,
+      "Recall": 0.8022585818472158,
+      "OFF_FPR": 0.029576222888910392,
+      "high_power_OFF_FPR": 0.07369887977702738,
+      "F1": 0.8585794085342542
+    }
+  ],
+  "aggregation": "Saved explicit-denominator summary; AP/Recall use positive-supported records, OFF FPR includes absent-device records.",
+  "limitations": [
+    "Controlled recordings and previously exposed scripts; not cross-house deployment.",
+    "Ranking quality and fixed-threshold recall are different properties."
+  ],
+  "metric_sources": [
+    {
+      "member": "results/tdha-v2/run/redraw_20260924/tables/summary_explicit_denominators.csv",
+      "sha256": "6c6a1f02c02123e7b0cfde819c053fe90dc3f41f1f7a4e01673bcf5e643af49d"
+    }
+  ],
+  "saved_uncertainty": {
+    "path": "results/tdha-waveform/confidence.json",
+    "status": "saved_paired_effect_intervals",
+    "scope": "Controlled, previously exposed cross-script TDHA records. Three configuration factors change together: architecture, representation and history. These are paired effect intervals, not absolute metric CIs."
+  }
+}
